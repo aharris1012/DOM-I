@@ -75,6 +75,7 @@ greenNav.appendChild(Career);
 
 document.querySelectorAll("nav a").forEach( link => {
   link.style.color = "green";
+  link.style.fontSize= "1.2rem";
 })
 
 
@@ -92,6 +93,12 @@ topContent[1].textContent = siteContent["main-content"]["about-h4"];
 topContent[2].textContent = siteContent["main-content"]["services-h4"];
 topContent[3].textContent = siteContent["main-content"]["product-h4"];
 topContent[4].textContent = siteContent["main-content"]["vision-h4"];
+
+const subtitle = document.querySelectorAll('h4');
+subtitle.forEach(element =>{
+  element.style.color= "#622569";
+  element.style.fontSize= "1.5rem";
+})
 
 
 //main//
@@ -111,3 +118,6 @@ contact[2].textContent = siteContent["contact"]["email"];
 //footer//
 const Footer = document.querySelector("footer");
 Footer.textContent = siteContent["footer"]["copyright"];
+
+//extra//
+document.body.style.backgroundColor = "#b7d7e8";
